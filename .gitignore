@@ -128,3 +128,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Docker volumes (local databases)
+todo-db/
+todo-mysql-data/
+
+# Docker Compose override (si es solo para tu máquina)
+docker-compose.override.yml
+
+# Vite build output (para frontend)
+client/dist/
+
+# Optional: si querés ignorar lock files del otro gestor
+package-lock.json
