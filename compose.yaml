@@ -117,6 +117,8 @@ services:
     labels:
       traefik.http.routers.client.rule: Host(`localhost`)
       traefik.http.services.client.loadbalancer.server.port: 5173
+    environment:
+      VITE_BACKEND_URL: http://backend:3000
 
 
   ###################################################
