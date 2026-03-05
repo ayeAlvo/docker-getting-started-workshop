@@ -6,10 +6,10 @@ export function TodoListCard() {
     const [items, setItems] = useState(null);
 
     useEffect(() => {
-        fetch('/api/items')
-            .then((r) => r.json())
-            .then(setItems);
-    }, []);
+    fetch('/api/items')
+        .then((r) => r.json())
+        .then(setItems);
+}, []);
 
     const onNewItem = useCallback(
         (newItem) => {
